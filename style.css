@@ -1,0 +1,238 @@
+/* style.css */
+body{
+  background: url(../img/밤의숲_은하수v1\.1.png) no-repeat 10% 0;
+  background-size: cover;
+}
+
+h3{
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 100px;
+  background: linear-gradient(rgba(251, 181, 0, 1),rgba(255, 77, 0, 0.84));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+@media (min-width:1546px) {
+  .container {
+    max-width: 1546px;
+  }
+}
+
+#intro{
+  width: 100%;
+  height: auto;
+}
+
+#intro .intro_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#intro .intro_wrap h1{
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  color: #fff;
+  font-style: normal;
+  font-size: 80px;
+  text-align: right;
+}
+
+#intro .intro_wrap h2{
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  color: #fff;
+  font-style: normal;
+  font-size: 75px;
+  text-align:  left;
+}
+
+/* 어바웃 */
+#about{
+  width: 100%;
+  height: auto;
+  margin-top: 100px; 
+}
+
+.about_wrap{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about_wrap .a_top{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.about_wrap .a_top .a_t_left img{
+  max-width: 676px;
+}
+
+.about_wrap .a_top .a_t_right{
+  text-align: center;
+}
+
+.about_wrap .a_top .a_t_right .resume{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_wrap h4{
+  font-family: 'Hepta Slab', serif;
+  font-size: 2.5em;
+  color: #F8BBBB;
+  padding-bottom: 50px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.about_wrap .a_top .a_t_right .resume p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  padding-bottom: 79px;
+}
+
+.about_wrap .a_top .a_t_right .resume button{
+  background: #FBB500;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  padding: 30px 80px;
+  border-radius: 10px;
+  margin-bottom: 88px;
+}
+
+.about_wrap .a_top .a_t_right .certificate p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  padding-bottom: 31px;
+}
+
+/* about 아래부분 */
+.about_wrap .a_bottom{
+  margin-top: 100px;
+  width: 100%;
+}
+
+
+/* 스킬 */
+.about_wrap .a_bottom .skill .icon_imgs{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_wrap .a_bottom .skill .icon_imgs li{
+  max-width: 181px;
+}
+
+.about_wrap .a_bottom .skill .icon_imgs li img{
+  width: 100%;
+}
+
+
+/* 성격 */
+.about_wrap .a_bottom .advantage{
+   width: 100%;
+   margin-top: 100px;
+}
+
+.about_wrap .a_bottom .advantage p{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-style: normal;
+}
+
+.about_wrap .a_bottom .advantage .keyword{
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about_wrap .a_bottom .advantage .inform{
+  padding-bottom: 80px;
+}
+
+.about_wrap .a_bottom .advantage .inform:last-child{
+  padding-bottom: 150px;
+}
+
+
+/* 포트폴리오 */
+
+
+
+/* 컨텍 */
+#contact{
+  width: 100%;
+  height: auto;
+}
+
+#contact .contact_wrap{
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .contact_wrap .c_right .c_website{
+  width: 100%;
+  position: relative;
+}
+
+#contact .contact_wrap .c_right .c_website img{
+  max-width: 100%;
+}
+
+#contact .contact_wrap .c_right .c_website form{
+  background: #fff;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  width: 694px;
+  height: 695px;
+  position: absolute;
+  bottom: 0;
+  right: 65px;
+}
+
+#contact .contact_wrap .c_right .c_website form input{
+  background: #EAE8E8;
+  width: 594px;
+  padding: 1% 2%;
+  height: 46px;
+  margin-bottom: 32px;
+  font-family: 'Noto Sans KR',sans-serif;
+  color: #000;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#contact .contact_wrap .c_right .c_website form .name{
+  margin-top: 38px;
+}
+
+#contact .contact_wrap .c_right .c_website form #message{
+  height: 300px;
+  background: #EAE8E8;
+  width: 594px;
+  padding: 1% 2%;
+  margin-bottom: 32px;
+  font-family: 'Noto Sans KR',sans-serif;
+  color: #000;
+  font-size: 20px;
+  border-radius: 5px;
+}
+

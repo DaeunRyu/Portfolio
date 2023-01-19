@@ -4,28 +4,170 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- 파비콘 -->
+<link href="img/favicon.ico" rel="icon">
+<link href="img/favicon.ico" rel="apple-touch-icon">
+
+
 <link rel="stylesheet" type="text/css" href="./css/import.css">
+
+<!-- XEicon -->
+<link rel="stylesheet" type="text/css" href="XEIcon-2.2.0/xeicon.min.css">
+
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap" rel="stylesheet">
 
 <title>Ryu Daeun's Portfolio</title>
 </head>
+
 <body>
-<Header>
+<header>
   <div class="pc_H container">
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About Me</a></li>
-      <li><h2 class="logo"><a href="#"><img src="" alt="로고"></a></h2></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="#intro" class="scroll">Home</a></li>
+        <li><a href="#about" class="scroll">About Me</a></li>
+        <li><a href="index.html"><h2><img src="./img/로고_v1.1.1.png" alt="로고"></h2></a></li>
+        <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+        <li><a href="#contact" class="scroll">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-</Header>
-<!-- //Header -->
+</header>
+<!-- //header -->
 
 <section id="intro">
   <div class="intro_wrap container">
-    
+    <h1>UI&UX Web Designer <br>Web Publisher</h1>
+    <h2>“~한 퍼블리셔가 
+      <br>되고 싶은  류다은 입니다”</h2>
   </div>
 </section>
+<!-- //intro -->
+
+<section id="about">
+  <div class="about_wrap container">
+    <h3>About Me</h3>
+    <div class="a_top">
+      <div class="a_t_left">
+        <img src="./img/증명사진.png" alt="프로필 사진">
+      </div>
+
+      <div class="a_t_right">
+        <div class="resume">
+          <h4>Who am I?</h4>
+          <p>신입 웹  퍼블리셔 류다은입니다!</p>
+          <button>DOWNLOAD RESUME</button>
+        </div>
+
+        <div class="certificate">
+          <h4>Certificate</h4>
+          <p>컴퓨터활용능력2급 (2022.09.16)</p>
+          <p>OPIC <br>Intermediate High급 취득 (2021.08)</p>
+          <p>운전면허 2종 보통 (2021.06.04)</p>
+        </div>
+      </div>
+    </div>
+    <!-- //a_top -->
+
+    <div class="a_bottom">
+      <div class="skill">
+        <h4>Skill</h4>
+        <ul class="icon_imgs">
+          <li>
+            <a><img src="./img/html5_icon.png" alt="" class="html5"></a>
+          </li>
+          <li>
+            <a><img src="./img/css3_icon.png" alt="" class="css3"></a>
+          </li>
+          <li>
+            <a><img src="./img/js_icon.png" alt="" class="js"></a>
+          </li>
+          <li>
+            <a><img src="./img/photoshop_icon.png" alt="" class="ps"></a>
+          </li>
+          <li>
+            <a><img src="./img/ai_icon.png" alt="" class="ai"></a>
+          </li>
+          <li>
+            <a><img src="./img/xd_icon.png" alt="" class="xd"></a>
+          </li>
+          <li>
+            <a><img src="./img/figma_icon.png" alt="" class="figma"></a>
+          </li>
+        </ul>
+      </div>
+      <!-- //skill -->
+
+      <div class="advantage">
+        <h4>Advantage</h4>
+        <p class="keyword">#관인엄기</p>
+        <p class="inform">남에게는 관대하고 <br>저에게는 엄격한 성격으로 성장을 위해 노력합니다.</p>
+        <p class="keyword">#배움의_즐거움</p>
+        <p class="inform">새로운 지식을 배우는 것을 좋아하고 <br>배운 지식을 활용하여 새로운 일을 하는 것에 거부감이 없습니다.</p>
+        <p class="keyword">#물_흐르듯_자연스러움</p>
+        <p class="inform">어떤 곳에서 일을 하던지 자연스럽게 흡수되어 <br>모든 사람들에게 친근하게 섞여들어갈 수 있는 사람입니다.</p>
+      </div>
+      <!-- //advantage -->
+    </div>
+    <!-- //a_bottom -->
+  </div>
+  <!-- //about_wrap container -->
+  </section>
+  <!-- //about -->
+
+  <section id="portfolio">
+    <div class="portfolio_wrap container">
+      <h3>Portfolio</h3>
+      <ul class="swiper_wrapper">
+        <li class="swiper-slide">1</li>
+        <li class="swiper-slide">2</li>
+        <li class="swiper-slide">3</li>
+        <li class="swiper-slide">4</li>
+        <li class="swiper-slide">5</li>
+      </ul>
+    </div>
+    <div class="swiper-prev"></div>
+    <div class="swiper-next"></div>
+  </section>
+  <!-- //portfolio -->
+
+  <section id="contact">
+    <div class="contact_wrap  container">
+      <div class="c_left">
+        <h3>Contact</h3>
+      </div>
+
+      <div class="c_right">
+        <div class="c_website">
+          <img src="./img/website.png" alt="">
+          <form action="https://script.google.com/macros/s/AKfycbxxGuwwMUoVqtV5xgVYjE-kUQQjD6R1eJavBG0drxWjXvjQFiM9UxHnBGsbYdWPiGQnPA/exec" method="post" target="frAttachFiles" >
+            <input type="text" class="name" name="name" placeholder="Name" value>
+            <input type="email" class="email" name="email" placeholder="E-mail" value>
+            <input type="text" class="title" placeholder="Title" value>
+            <textarea id="message" placeholder="Message"></textarea>
+            <input type="submit" class="send" name="send" placeholder="send" value="SEND">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- //contact_wrap container -->
+  </section>
+  <!-- //contact -->
+
+  <footer>
+    <div class="footer_wrap container">
+      <div class="f_logo">
+        <a href="index.html"><img src="./img/로고_v1.1.1.png" alt=""></a>
+      </div>
+      
+    <ul class="sns">
+      <li><a><i class="xi-github xi-2x"></i></a><br>GitHub</li>
+      <li><a><i class="xi-instagram xi-2x"></i></a><br>Instargram</li>
+    </ul>
+  </div>
+    <p>Copyright 2022. Ryu Daeun All rights reserved.</p>
+  </footer>
 </body>
 </html>
