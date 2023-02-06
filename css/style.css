@@ -1,6 +1,6 @@
 /* style.css */
 body{
-  background: url(../img/밤의숲_은하수v1\.1.png) no-repeat 10% 0;
+  background: url(../img/밤하늘_1.png) no-repeat 10% 0;
   background-size: cover;
 }
 
@@ -22,7 +22,23 @@ h3{
 
 #intro{
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
+}
+
+#intro img{
+  position: absolute;
+  top: 400px;
+  left: -20%;
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+  max-width: 100%;
+}
+
+@keyframes rotate_image{
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 #intro .intro_wrap{
@@ -31,21 +47,28 @@ h3{
   margin: 0 auto;
 }
 
-#intro .intro_wrap h1{
-  font-family: 'Noto Sans';
-  font-weight: 600;
-  color: #fff;
-  font-style: normal;
-  font-size: 80px;
-  text-align: right;
+#intro .intro_wrap .text_wrap{
+  width: 85%;
+  margin-left: auto;
 }
 
-#intro .intro_wrap h2{
+#intro .intro_wrap .text_wrap h1{
   font-family: 'Noto Sans';
   font-weight: 600;
   color: #fff;
   font-style: normal;
-  font-size: 75px;
+  /* font-size: 80px; */
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 250px 0;
+}
+
+#intro .intro_wrap .text_wrap h2{
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  color: #fff;
+  font-style: normal;
+  font-size: 2.0rem;
   text-align:  left;
 }
 
@@ -152,6 +175,7 @@ h3{
   font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
   font-style: normal;
+  transition: 3s;
 }
 
 .about_wrap .a_bottom .advantage .keyword{
@@ -170,13 +194,33 @@ h3{
 
 
 /* 포트폴리오 */
+#portfolio{
+  width: 100%;
+  height: auto;
+  padding-bottom: 150px;
+}
 
+#portfolio .portfolio_wrap{
+  margin: 0 auto;
+}
 
+#portfolio .portfolio_wrap .swiper-container{
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+#portfolio .portfolio_wrap .swiper-container .swiper-slide{
+  width: 30%;
+  height: 660px;
+  background: #7986B5;
+}
 
 /* 컨텍 */
 #contact{
   width: 100%;
   height: auto;
+  background: linear-gradient(to top, rgba(10, 9, 23, 1) 50%, rgba(10, 9, 23, 0));
 }
 
 #contact .contact_wrap{
@@ -206,6 +250,7 @@ h3{
   position: absolute;
   bottom: 0;
   right: 65px;
+  border-radius: 5px 5px 0 0;
 }
 
 #contact .contact_wrap .c_right .c_website form input{
@@ -226,7 +271,7 @@ h3{
 
 #contact .contact_wrap .c_right .c_website form #message{
   height: 300px;
-  background: #EAE8E8;
+  background: #e8e8ea;
   width: 594px;
   padding: 1% 2%;
   margin-bottom: 32px;
@@ -236,3 +281,8 @@ h3{
   border-radius: 5px;
 }
 
+#contact .contact_wrap .c_right .c_website form .send{
+  background-color: #2f3e5d;
+  color: #fff;
+  width: 314px;
+}
