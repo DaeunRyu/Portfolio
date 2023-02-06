@@ -1,1 +1,107 @@
 /* common.css */
+
+@media (min-width:1546px) {
+  .container {
+    max-width: 1546px;
+  }
+}
+
+header{
+  /* background: #0F1F38; */
+  background: #000;
+  width: 100%;
+  height: 130px;
+}
+
+header .pc_H{
+  margin: 0 auto;
+  height: 100%;
+}
+
+header .pc_H nav{
+  width: 100%;
+}
+
+header .pc_H nav ul{
+  /* border: 5px solid red; */
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 130px;
+}
+
+header .pc_H nav ul li a{
+  font-family: 'Noto Sans';
+  color: #fff;
+  font-size: 32px;
+  transition: 0.5s;
+}
+
+header .pc_H nav ul li a:hover{
+  color: #FBB500;
+}
+
+header .pc_H nav ul li img{
+  margin-top: 30px;
+  max-width: 100%;
+}
+
+
+/* footer 시작 */
+footer{
+  width: 100%;
+  height: auto;
+  background: #081932;
+  padding: 5% 0;
+}
+
+footer .footer_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_wrap .f_logo img{
+  width: 100%;
+}
+
+footer .footer_wrap .sns{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_wrap .sns li{
+  text-align: center;
+  padding-right: 48px;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+}
+
+footer .footer_wrap .sns li a{
+  color: #fff;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+footer .footer_wrap .sns li a:hover{
+  color: #FBB500;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 4%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer p:last-child{
+  padding-top: 0;
+}
