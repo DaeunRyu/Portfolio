@@ -217,8 +217,17 @@ h3{
 #portfolio .portfolio_wrap .swiper-container .swiper-slide{
   width: 30%;
   height: 660px;
-  background: #7986B5;
+  /* background: #7986B5; */
 }
+
+#portfolio .portfolio_wrap .swiper-container .swiper-slide:nth-child(4),
+#portfolio .portfolio_wrap .swiper-container .swiper-slide:nth-child(5){
+  color: #fff;
+  background: #7986B5;
+  text-align: center;
+  padding: 1%;
+}
+
 
 /* 컨텍 */
 #contact{
